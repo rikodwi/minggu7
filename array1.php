@@ -29,17 +29,18 @@ $angka = [1, 3, 5, 7, 9];
     </style>
 </head>
 <body>
-    <?php for($i = 0 ; $i < 5; $i++){} ?>
+    <?php for($i = 0 ; $i < 5; $i++){ ?>
     <div class="kotak">
         <?php echo $angka[$i]; ?>
     </div>
     <?php } ?>
     <div class="clear"></div>
-    <?php foreach($angka as $a); ?>
-    <?php endforeach($angka as $a); ?>
+    <?php foreach($angka as $a): ?>
     <div class="kotak">
-        <?php echo $a; ?>
+        <?= $a; ?>
+
     </div>
+    
     <?php endforeach; ?>
 </body>
 </html>
