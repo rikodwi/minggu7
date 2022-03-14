@@ -13,10 +13,12 @@ $mahasiswa = ["riko dwi setiawan", "21520018", "teknik informatika", "riko.aa.aa
 <body>
     <h1>daftar mahasiswa</h1>
     <ul>
-        <li>riko dwi setiawan</li>
-        <li>21520018</li>
-        <li>teknik informatika</li>
-        <li>teknik informatika</li>
+    <?php foreach($mahasiswa as $mhs ):
+        ?>
+        <li>
+            <?php echo $mhs; ?>
+        </li>
+        <?php endforeach ?>
     </ul>
 </body>
 </html>
